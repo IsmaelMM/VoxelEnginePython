@@ -3,7 +3,7 @@ import numpy as np
 
 class BaseMesh:
     def __init__(self):
-        # OpenGl context
+        # OpenGL context
         self.ctx = None
         # shader program
         self.program = None
@@ -26,3 +26,47 @@ class BaseMesh:
 
     def render(self):
         self.vao.render()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

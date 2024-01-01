@@ -1,6 +1,4 @@
-import numpy as np
-
-# import settings import *
+from settings import *
 from meshes.base_mesh import BaseMesh
 
 
@@ -17,13 +15,57 @@ class QuadMesh(BaseMesh):
         self.vao = self.get_vao()
 
     def get_vertex_data(self):
-        vertices = np.array([
+        vertices = [
             (0.5, 0.5, 0.0), (-0.5, 0.5, 0.0), (-0.5, -0.5, 0.0),
             (0.5, 0.5, 0.0), (-0.5, -0.5, 0.0), (0.5, -0.5, 0.0)
-        ], dtype='float32')
-        colors = np.array([
+        ]
+        colors = [
             (0, 1, 0), (1, 0, 0), (1, 1, 0),
             (0, 1, 0), (1, 1, 0), (0, 0, 1)
-        ], dtype='float32')
-        vertex_data = np.hstack(tup=[vertices, colors])  # , dtype='float32')
+        ]
+        vertex_data = np.hstack([vertices, colors], dtype='float32')
         return vertex_data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 from meshes.base_mesh import BaseMesh
-from meshes.chunk_mesh_builder import builder_chunk_mesh
+from meshes.chunk_mesh_builder import build_chunk_mesh
 
 
 class ChunkMesh(BaseMesh):
@@ -16,8 +16,59 @@ class ChunkMesh(BaseMesh):
         self.vao = self.get_vao()
 
     def get_vertex_data(self):
-        mesh = builder_chunk_mesh(
+        mesh = build_chunk_mesh(
             chunk_voxels=self.chunk.voxels,
             format_size=self.format_size,
         )
         return mesh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
