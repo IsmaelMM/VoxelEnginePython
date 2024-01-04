@@ -16,7 +16,7 @@ def get_chunk_index(world_voxel_pos):
     if not (0 <= cx < WORLD_W and 0 <= cy < WORLD_H and 0 <= cz < WORLD_D):
         return -1
 
-    index = cx + WORLD_H * cz + WORLD_AREA * cy
+    index = cx + WORLD_W * cz + WORLD_AREA * cy
     return index
 
 

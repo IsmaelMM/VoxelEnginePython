@@ -19,7 +19,7 @@ class World:
                     chunk_index = x + WORLD_W * z + WORLD_AREA * y
                     self.chunks[chunk_index] = chunk
 
-                    # put che chunk voxels in a separate array
+                    # put the chunk voxels in a separate array
                     self.voxels[chunk_index] = chunk.build_voxels()
 
                     # get pointer to voxels
