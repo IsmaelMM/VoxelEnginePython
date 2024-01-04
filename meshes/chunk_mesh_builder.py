@@ -54,7 +54,7 @@ def build_chunk_mesh(chunk_voxels, format_size, chunk_pos, world_voxels):
             for z in range(CHUNK_SIZE):
                 # Esto se puede implementar como una suma en el for
                 # Haciendo x = x + 1, y = y + CHUNK_SIZE, z = z + CHUNK_AREA
-                voxel_id = chunk_voxels[x + CHUNK_SIZE * z + CHUNK_AREA + y]
+                voxel_id = chunk_voxels[x + CHUNK_SIZE * z + CHUNK_AREA * y]
                 if not voxel_id:
                     continue
 
