@@ -185,7 +185,7 @@ def build_chunk_mesh(chunk_voxels, format_size, chunk_pos, world_voxels):
 
                 # back face
                 if is_void((x, y, z - 1), (wx, wy, wz - 1), world_voxels):
-                    get_ao((x, y, z - 1), (wx, wy, wz - 1), world_voxels, plane='Z')
+                    ao = get_ao((x, y, z - 1), (wx, wy, wz - 1), world_voxels, plane='Z')
                     flip_id = ao[1] + ao[3] > ao[0] + ao[2]
 
                     v0 = pack_data(x,     y,     z, voxel_id, 4, ao[0], flip_id)
